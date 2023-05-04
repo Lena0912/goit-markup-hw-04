@@ -6,6 +6,8 @@
     --color-for-theme-dark: #FFFFFF;
     --light-mode: #F4F4FD;
     --accent-button: #E7E9FC;
+    --green: #31D0AA;
+    --light-slate: #8E8F99;
     --indent: 24px;
     --items: 4; 
 }
@@ -55,6 +57,7 @@ padding: 120px 0;
 }
 .page-header {   
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .page-nav {
     display: flex;
@@ -129,11 +132,10 @@ color: var(--accent-color);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    
     text-align: center;
     padding: 188px 0;
-    
-
+    background-size: cover;
 }
 .hero-title {    
         font-weight: 700;
@@ -146,8 +148,8 @@ color: var(--accent-color);
         display: flex;
         margin-left: auto;
         margin-right: auto;
-
 }
+
 .modal-btn {
         font-family: inherit;
         font-weight: 500;
@@ -179,6 +181,19 @@ color: var(--accent-color);
     display: flex;
     gap: 24px;
     width: 1128px;
+}
+.advantages-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: var(--light-mode);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    fill: var(--accent-color);
+}
+.advantages-icons-items {
+    
 }
 .feacher-items {
     width: calc((100% - 72px) / 4);
@@ -227,7 +242,8 @@ flex-basis: calc((100% - var(--indent)* var(--items)-1)/ var(--items));
     background-color: var(--light-mode);    
 }
 .name-role {
-    padding: 32px 16px;    
+    padding-top: 32px;    
+
 }
 .team-name {
 text-align: center;
@@ -242,8 +258,60 @@ text-align: center;
 .team-cards {
     background:var(--color-for-theme-dark);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
-        
+    border-radius: 0px 0px 4px 4px;       
+}
+.team-cards-social-icons {
+    padding: 32px 0; 
+} 
+.team-cards-social-list {
+display: flex;
+justify-content: center;
+gap: 24px;
+
+}
+.team-cards-social-list-li {
+width: 40px;
+height: 40px;
+}
+.team-cards-social-link-item-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primery-brend);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team-cards-social-link-item-link:hover,
+.team-cards-social-link-item-link:focus {
+    background-color: var(--accent-color);
+}
+/* Customers */
+.customers-list {
+    display: flex;
+    gap: 24px;
+}
+.customers-list-item {
+    width: calc((100% - 120px) / 6);
+    height: 88px;
+}
+.customers {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--light-slate);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-slate);
+}
+.customers:hover,
+.customers:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+.customers-icons {
+    fill: currentColor;
 }
 /* Footer */
 .footer { 
@@ -255,12 +323,19 @@ text-align: center;
     margin-bottom: 16px;
     /* outline: 2px solid teal; */
 }
+.footer-items {
+    display: flex;
+    align-items: baseline;
+}
 .footer-descr {    
     font-size: 16px;
     line-height: 1.5;      
     letter-spacing: 0.02em;
     color: var(--light-mode);
     max-width: 264px;
+}
+.footer-logo-descr {
+    margin-right: 120px;
 }
 
 .logo-part-dark {
@@ -277,10 +352,12 @@ text-align: center;
     color: var(--primery-brend); 
 }
 .footer-name {
-    color: #FFFFFF;
+    color: var(--color-for-theme-dark);
+    font-weight: 500px;
     font-size: 16px;
     line-height: 1.5; 
     letter-spacing: 0.02em;
+    margin-bottom: 16px;
     
 }
 .footer-social {
@@ -298,14 +375,28 @@ text-align: center;
       
 }
 .social-link-item-link {
-    display: block;    
-    width: 40px;
-    height: 40px;
+    display: flex;    
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     background-color: var(--primery-brend);
+    align-items: center;
+    justify-content: center;
+    fill: var(--light-mode);
+}
+.social-link-item-link:hover,
+.social-link-item-link:focus {
+background-color: var(--green);
+}
+.social-list-li {
+    width: 40px;
+    height: 40px;
 }
 .social-list-icon-footer {
     fill: var(--light-mode);
+
+   
+    
 }
 /* Button */
 .button {
