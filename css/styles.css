@@ -192,9 +192,7 @@ color: var(--accent-color);
     margin-bottom: 8px;
     fill: var(--accent-color);
 }
-.advantages-icons-items {
-    
-}
+
 .feacher-items {
     width: calc((100% - 72px) / 4);
 }
@@ -242,7 +240,8 @@ flex-basis: calc((100% - var(--indent)* var(--items)-1)/ var(--items));
     background-color: var(--light-mode);    
 }
 .name-role {
-    padding-top: 32px;    
+    padding-top: 32px;
+       
 
 }
 .team-name {
@@ -287,6 +286,16 @@ height: 40px;
     background-color: var(--accent-color);
 }
 /* Customers */
+.customers-work-title {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--main-color);
+        margin-bottom: 72px;
+}
 .customers-list {
     display: flex;
     gap: 24px;
@@ -327,7 +336,8 @@ height: 40px;
     display: flex;
     align-items: baseline;
 }
-.footer-descr {    
+.footer-descr { 
+    font-weight: 500;   
     font-size: 16px;
     line-height: 1.5;      
     letter-spacing: 0.02em;
@@ -470,6 +480,15 @@ background-color: var(--green);
     border: 1px solid #e7e9fc;
     border-top: none;
 }
+.flex-element-items {
+    display: block;
+}
+.flex-element-items:hover,
+.flex-element-items:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 /* .flex-element:nth-child(3n) {
     margin-right: 0;
 }
