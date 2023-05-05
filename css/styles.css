@@ -254,8 +254,7 @@ margin-bottom: 8px;
 text-align: center;
 }
 .our-team-list {
-    display: flex;
-    justify-content: center;
+    display: flex;    
     width: calc((100% - 72px) / 4);
     flex-wrap: wrap;
     gap: var(--indent);
